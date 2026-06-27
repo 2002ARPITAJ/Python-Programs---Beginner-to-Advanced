@@ -1,4 +1,4 @@
-numbers = [10, 20, 50, 60, 40, 10, 80, 60, 47]
+numbers = [10, 20, 50, 60, 40, 10, 80, 60, 47, 47, 80]
 num = int(input("Enter the number to be checked for duplicate: "))
 n = 0
 
