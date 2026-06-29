@@ -1,0 +1,30 @@
+n = int(input("Enter the number of elements: "))
+
+numbers = []
+
+for i in range(n):
+    num = int(input(f"Enter element {i+1}: "))
+    numbers.append(num)
+
+print("List:", numbers)
+
+freq = {}
+
+# Count frequency of each number
+for num in numbers:
+    if num in freq:
+        freq[num] += 1
+    else:
+        freq[num] = 1
+
+print("Repeated numbers are:")
+
+found = False
+
+for key, value in freq.items():
+    if value > 1:
+        print(f"{key} appears {value} times")
+        found = True
+
+if not found:
+    print("No repeated numbers found.")
